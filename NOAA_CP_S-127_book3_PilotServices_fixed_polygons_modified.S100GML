@@ -1,0 +1,1870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/S127/1.0.0/20181129/S127Basic.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<S127:Dataset xmlns:S127="http://www.iho.int/S127/gml/cs0/1.0"
+    xsi:schemaLocation="http://www.iho.int/S127/gml/cs0/1.0 ../../../schemas/S127/1.0.0/20181129/S127.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:S100="http://www.iho.int/s100gml/1.0"
+    xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile"
+    xmlns:xlink="http://www.w3.org/1999/xlink"  gml:id="DSID_s127CP_book3_UNH">
+    <gml:boundedBy><gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326" srsDimension="2">
+        <gml:lowerCorner>36.800000 -77.1184900</gml:lowerCorner>
+        <gml:upperCorner>39.319463 -75.809555</gml:upperCorner>
+    </gml:Envelope></gml:boundedBy>
+   <S100:metadata>
+    <S100:DatasetIdentificationInformation>
+        <S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
+        <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
+        <S100:productIdentifier>S-127</S100:productIdentifier>
+        <S100:productEdition>1.0.0-20181129</S100:productEdition>
+        <S100:applicationProfile/>
+        <S100:datasetFileIdentifier>127_CB_CPB3CH9</S100:datasetFileIdentifier>
+        <S100:datasetTitle>Preliminary exploratory dataset for S-127 - US Atlantic Coast Pilot sample from Book 3</S100:datasetTitle>
+        <S100:datasetReferenceDate>2018-12-20</S100:datasetReferenceDate>
+        <S100:datasetLanguage>en</S100:datasetLanguage>
+        <S100:datasetAbstract>Coast Pilot S-127:Pilot District</S100:datasetAbstract>
+        <S100:datasetTopicCategory>transportation</S100:datasetTopicCategory>
+    </S100:DatasetIdentificationInformation>
+    <S100:DatasetStructureInformation>
+        <S100:datasetCoordOriginX>0.0</S100:datasetCoordOriginX>
+        <S100:datasetCoordOriginY>0.0</S100:datasetCoordOriginY>
+        <S100:datasetCoordOriginZ>0.0</S100:datasetCoordOriginZ>
+        <S100:coordMultFactorX>1</S100:coordMultFactorX>
+        <S100:coordMultFactorY>1</S100:coordMultFactorY>
+        <S100:coordMultFactorZ>1</S100:coordMultFactorZ>
+    </S100:DatasetStructureInformation>
+   </S100:metadata>
+ 
+    <!-- this needs to be updated to include delaware bay...all of book 3
+        West  -77.118490    East  -75.809555 
+        North  39.319463    South  36.800000 -->
+    
+
+    <!--Authorities-->
+    
+        <S127:Authority gml:id="CP.AUTORI.LAUNCH.DBL">
+            <featureName>
+                <name>Delaware Bay Launch</name>
+            </featureName>
+            <categoryOfAuthority>private company</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.LAUNCH.DBL" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:Authority>
+    
+    
+        <S127:Authority gml:id="CP.AUTORI.PILOT.AMP">
+            <featureName>
+                <name>The Association of Maryland Pilots</name>
+            </featureName>
+            <categoryOfAuthority>maritime</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.AMPPS" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.AMPVPAJPT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.MSBRDPJPS" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>              
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247"/>
+        </S127:Authority>
+    
+    
+        <S127:Authority gml:id="CP.AUTORI.PILOT.CIPA">
+            <featureName>
+                <name>The Chesapeake and Interstate Pilots Association</name>
+            </featureName>
+            <categoryOfAuthority>maritime</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+        </S127:Authority>
+    
+    
+        <S127:Authority gml:id="CP.AUTORI.PILOT.VPA">
+            <featureName>
+                <name>The Virginia Pilots Association</name>
+            </featureName>
+            <categoryOfAuthority>maritime</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.VSPS" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.AMPVPAJPT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247"/>
+        </S127:Authority>
+       
+    
+        <S127:Authority gml:id="CP.AUTORI.PILOT.IPAI">
+            <featureName>
+                <name>The Interport Pilots Agency, Inc.</name>
+            </featureName>
+            <categoryOfAuthority>maritime</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.IPAI" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+        </S127:Authority>
+        
+    
+        <S127:Authority gml:id="CP.AUTORI.PILOT.SHPA">
+            <featureName>
+                <name>The Sandy Hook Pilot Association</name>
+            </featureName>
+            <categoryOfAuthority>maritime</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.SHPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+        </S127:Authority>
+      
+    
+        <S127:Authority gml:id="CP.AUTORI.PILOT.PABRD">
+            <featureName>
+                <name>The Pilots' Association for Bay and River Delaware</name>
+            </featureName>
+            <categoryOfAuthority>maritime</categoryOfAuthority>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.PABRDO" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.PABRDPS" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/> 
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.PABRDWT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/> 
+            <theContactDetails xlink:href="#CP.CONDET.PILOT.MSBRDPJPS" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>  
+            <theServiceHours xlink:href="#SRVHRS.LIMITED.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+        </S127:Authority>
+     
+    <!--end Authorities-->
+    
+    <!--Contact Details-->
+    
+        <S127:ContactDetails gml:id="CP.CONDET.LAUNCH.DBL">
+            <featureName>                
+                <name>Delaware Bay Launch</name>                
+            </featureName>           
+            <information>                
+                <headline>Phone Hours</headline>
+                <text>24-hour</text>
+            </information>
+            <information>
+                <headline>Additional Information</headline>
+                <text>Additional information about Delaware Bay Launch Service may be found online.</text>
+            </information>
+            <onlineResource>
+                <linkage>delawarebaylaunch.com</linkage>
+                <protocol>http</protocol>
+            </onlineResource>
+            <telecommunications>
+                <telecommunicationIdentifier>+1 302–422–7604</telecommunicationIdentifier>
+            </telecommunications>             
+            <radiocommunications>
+                <categoryOfCommPref>preferred calling</categoryOfCommPref>
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>16</communicationChannel>
+                <communicationChannel>9</communicationChannel>
+            </radiocommunications>
+            <theAuthority xlink:href="#CP.AUTORI.LAUNCH.DBL" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.CIPA">
+            <featureName>
+                <name>The Chesapeake and Interstate Pilots Association</name>
+            </featureName>                
+            <contactAddress>                
+                <cityName>Norfolk</cityName>
+            </contactAddress>
+            <telecommunications>
+                <telecommunicationIdentifier>+1 757-855-2733</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>
+            </telecommunications>         
+            <telecommunications>
+                <contactInstructions>Cellular telephone confirmation with the pilot office in Norfolk or the launch service can be made if radio contact is unsuccessful.</contactInstructions>
+                <telcomCarrier>cellular</telcomCarrier>
+                <telecommunicationIdentifier>+1 302-422-7604</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>
+            </telecommunications>
+            <radiocommunications>
+                <categoryOfCommPref>preferred working</categoryOfCommPref>
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>13</communicationChannel>
+                <communicationChannel>16</communicationChannel>
+                <contactInstructions>Cellular telephone confirmation with the pilot office in Norfolk or the launch service can be made if radio contact is unsuccessful.</contactInstructions>           
+            </radiocommunications>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.VPA">
+            <featureName>
+                <name>The Virginia Pilots Association</name>
+            </featureName>                 
+            <contactAddress>                
+                <cityName>Norfolk</cityName>
+            </contactAddress>
+            <telecommunications>
+                <telecommunicationIdentifier>+1 757-496-0995</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>
+            </telecommunications>
+            <telecommunications>
+                <telecommunicationIdentifier>DISPATCH@PILOT.INFI.NET</telecommunicationIdentifier>
+                <telecommunicationService>email</telecommunicationService>
+            </telecommunications> 
+            <radiocommunications>
+                <categoryOfCommPref>preferred working</categoryOfCommPref>
+                <communicationChannel>11</communicationChannel>
+                <communicationChannel>13</communicationChannel>
+                <communicationChannel>16</communicationChannel>
+                <communicationChannel>74</communicationChannel>                 
+                <contactInstructions>Other channels are used on request.</contactInstructions>                
+            </radiocommunications>            
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.VSPS">
+            <featureName>
+                <name>Virginia State Pilot Station</name>
+            </featureName>
+            <contactAddress>
+                <deliveryPoint>Cape Henry</deliveryPoint>
+                <cityName>Virginia Beach</cityName>
+                <administrativeDivision>VA</administrativeDivision>
+            </contactAddress>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.AMP">
+            <featureName>
+                <name>The Association of Maryland Pilots</name>
+            </featureName>                        
+            <contactAddress>                
+                <cityName>Baltimore</cityName>
+            </contactAddress>
+            <telecommunications>
+                <telecommunicationIdentifier>+1 410-342-6013</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>
+            </telecommunications>
+            <telecommunications>
+                <telecommunicationIdentifier>+1 410-276-1364</telecommunicationIdentifier>
+                <telecommunicationService>facsimile</telecommunicationService>
+            </telecommunications>
+            <telecommunications>
+                <telecommunicationIdentifier>dispatch@mdpilots.com</telecommunicationIdentifier>
+                <telecommunicationService>email</telecommunicationService>
+            </telecommunications>
+            <telecommunications>         
+                <contactInstructions>MARPILOTS BALTIMORE</contactInstructions>
+                <telecommunicationIdentifier>87–574</telecommunicationIdentifier>
+                <telecommunicationService>telex</telecommunicationService>
+            </telecommunications>
+            <telecommunications>
+                <telecommunicationIdentifier>MARPILOT BALTIMORE</telecommunicationIdentifier>
+                <telecommunicationService>telegraph</telecommunicationService>             
+            </telecommunications>
+            <radiocommunications>
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>11</communicationChannel>
+                <communicationChannel>13</communicationChannel>
+                <communicationChannel>16</communicationChannel>
+                <communicationChannel>74</communicationChannel>
+            </radiocommunications>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.AMPPS">
+            <featureName>
+                <name>Maryland Pilots Pilot Station</name>
+            </featureName>
+            <contactAddress>
+                <deliveryPoint>Cape Henry</deliveryPoint>
+                <cityName>Virginia Beach</cityName>
+                <administrativeDivision>VA</administrativeDivision>
+            </contactAddress>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.IPAI">
+            <featureName>
+                <name>The Interport Pilots Agency, Inc.</name>
+            </featureName>                
+            <contactAddress> 
+                <deliveryPoint>906 Port Monmouth Road</deliveryPoint>
+                <cityName>Port Monmouth</cityName>
+                <administrativeDivision>NJ</administrativeDivision>
+                <postalCode>07758-0236</postalCode>
+            </contactAddress>
+            <onlineResource>
+                <linkage>interportpilots.com</linkage>
+                <protocol>http</protocol>
+                <onlineFunction>information</onlineFunction>                
+            </onlineResource>
+            <telecommunications>
+                <contactInstructions>24-hour telephone number</contactInstructions>
+                <telecommunicationIdentifier>732-787-5554</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>
+                <scheduleByDayOfWeek>
+                    <categoryOfSchedule>normal operation</categoryOfSchedule>
+                    <timeIntervalsByDayOfWeek>
+                        <dayOfWeek>Sunday</dayOfWeek>
+                        <dayOfWeek>Sunday</dayOfWeek>
+                        <dayOfWeekIsRange>true</dayOfWeekIsRange>                      
+                    </timeIntervalsByDayOfWeek>
+                </scheduleByDayOfWeek>
+            </telecommunications>    
+            <telecommunications>
+                <telecommunicationIdentifier>interport@verizon.net</telecommunicationIdentifier>
+                <telecommunicationService>email</telecommunicationService>
+            </telecommunications>            
+            <radiocommunications>
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>13</communicationChannel>
+            </radiocommunications>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.IPAI" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.SHPA">
+            <featureName>
+                <name>The Sandy Hook Pilot Association</name>
+            </featureName>
+            <contactAddress>
+                <deliveryPoint>201 Edgewater Street</deliveryPoint>
+                <cityName>Staten Island</cityName>
+                <administrativeDivision>NY</administrativeDivision>
+                <postalCode>10305</postalCode>
+            </contactAddress>
+            <contactInstructions>A 24-hour advance notice is required.</contactInstructions>            
+            <telecommunications>
+                <telecommunicationIdentifier>718-448-3900</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>                
+            </telecommunications>              
+            <telecommunications>
+                <telecommunicationIdentifier>718-447-1582</telecommunicationIdentifier>
+                <telecommunicationService>facsimile</telecommunicationService>                
+            </telecommunications> 
+            <telecommunications>
+                <telecommunicationIdentifier>pilotoffice@sandyhookpilots.com</telecommunicationIdentifier>
+                <telecommunicationService>email</telecommunicationService>                
+            </telecommunications>
+            <radiocommunications>
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>13</communicationChannel>             
+            </radiocommunications>            
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.SHPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>        
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.PABRDO">
+            <featureName>
+                <name>The Pilots' Association for the Delaware Bay and River Office</name>
+            </featureName>          
+            <contactAddress>
+                <deliveryPoint>800 South Columbus Blvd.</deliveryPoint>
+                <cityName>Philadelphia</cityName>
+                <administrativeDivision>PA</administrativeDivision>
+                <postalCode>19147</postalCode>
+            </contactAddress>
+            <telecommunications>
+                <telecommunicationIdentifier>215–465–8340</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>                
+            </telecommunications>  
+            <telecommunications>
+                <telecommunicationIdentifier>215–465–3970</telecommunicationIdentifier>
+                <telecommunicationService>facsimile</telecommunicationService>                
+            </telecommunications> 
+            <telecommunications>
+                <telecommunicationIdentifier>dispatch@delpilots.com</telecommunicationIdentifier>
+                <telecommunicationService>email</telecommunicationService>                
+            </telecommunications>
+            <telecommunications>
+                <telecommunicationIdentifier>DELPILOTS</telecommunicationIdentifier>
+                <telecommunicationService>telegraph</telecommunicationService>
+            </telecommunications>
+            <radiocommunications>                
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>14</communicationChannel>
+                <communicationChannel>13</communicationChannel>
+            </radiocommunications>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>        
+        
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.PABRDPS">
+            <featureName>
+                <name>The Pilots' Association for the Delaware Bay and River Pilot Station</name>
+            </featureName>           
+            <contactAddress>
+                <deliveryPoint>41 Cape Henlopen Drive</deliveryPoint>
+                <cityName>Lewes</cityName>
+                <administrativeDivision>DE</administrativeDivision>
+                <postalCode>19958</postalCode>
+            </contactAddress>
+            <telecommunications>
+                <telecommunicationIdentifier>302–645–2228</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>                
+            </telecommunications>  
+            <telecommunications>
+                <telecommunicationIdentifier>302–645–7822</telecommunicationIdentifier>
+                <telecommunicationService>facsimile</telecommunicationService>                
+            </telecommunications>                
+            <radiocommunications>
+                <categoryOfRadioMethods>Very High Frequency (VHF) voice traffic</categoryOfRadioMethods>
+                <communicationChannel>13</communicationChannel>
+                <communicationChannel>14</communicationChannel>                
+                <communicationChannel>16</communicationChannel>
+            </radiocommunications>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.PABRDWT">
+            <featureName>
+                <name>The Pilots’ Association for the Bay and River Delaware Pilot Watch Tower</name>                
+            </featureName>        
+            <featureName>
+                <name>Cape Henlopen Tower</name>
+            </featureName>
+            <contactAddress>                
+                <cityName>Cape Henlopen</cityName>
+                <administrativeDivision>DE</administrativeDivision>               
+            </contactAddress>
+            <telecommunications>
+                <telecommunicationIdentifier>302–645–8538</telecommunicationIdentifier>
+                <telecommunicationService>voice</telecommunicationService>                
+            </telecommunications>  
+            <telecommunications>
+                <telecommunicationIdentifier>302–645–1728</telecommunicationIdentifier>
+                <telecommunicationService>facsimile</telecommunicationService>                
+            </telecommunications>                       
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.MSBRDPJPS">
+            <featureName>
+                <name>Association of Maryland Pilots and Pilots' Association for the Delaware Bay and River Joint Pilot Station</name>
+            </featureName>
+            <contactAddress>
+                <deliveryPoint>the north bank of the canal on the Chesapeake and Delaware Canal</deliveryPoint>
+                <cityName>Chesapeake City</cityName>
+                <administrativeDivision>MD</administrativeDivision>
+            </contactAddress>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+        <S127:ContactDetails gml:id="CP.CONDET.PILOT.AMPVPAJPT">
+            <featureName>
+                <name>Association of Maryland Pilots and the Virginia Pilots Association Joint Pilot Tower</name>
+            </featureName>
+            <contactAddress>
+                <deliveryPoint>at Cape Henry just north of Cape Henry Light.</deliveryPoint>
+                <cityName>Virginia Beach</cityName>
+                <administrativeDivision>VA</administrativeDivision>
+            </contactAddress>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+            <theAuthority xlink:href="#CP.AUTORI.PILOT.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityContact"/>
+        </S127:ContactDetails>
+    
+    
+    <!--end Contact Details-->
+    
+    <!--Permissions-->
+    
+        <S127:PermissionType gml:id="CB.PERM.required.foreign">
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.foreign" xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>
+            <categoryOfRelationship>required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.foreign" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:PermissionType>
+    
+    
+        <S127:PermissionType gml:id="CB.PERM.required.domesticForeignTrade">
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.domesticForeignTrade" xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>
+            <categoryOfRelationship>required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.domesticForeignTrade" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:PermissionType>
+    
+    
+        <S127:PermissionType gml:id="CB.PERM.notRequired.domesticWithFedPilot">
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.notRequired.domesticWithFedPilot" xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>
+            <categoryOfRelationship>not required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.domesticWithFedPilot" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:PermissionType>
+    
+    
+        <S127:PermissionType gml:id="CB.PERM.permitted.domesticPublic">
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.permitted.domesticPublic" xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>
+            <categoryOfRelationship>permitted</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.domesticPublic" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:PermissionType>
+    
+    <!-- this is an attempt to represent the pilot vessels -->
+    
+        <S127:PermissionType gml:id="CB.PERM.required.pilotVessel.PABRD">            
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.pilotVessel.pabrd" xlink:href="#CB.PLTSRV.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>            
+            <categoryOfRelationship>required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.pilotVessel.50"/>
+        </S127:PermissionType>
+    
+    
+        <S127:PermissionType gml:id="CB.PERM.required.pilotVessel.AMPVPA">            
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.pilotVessel.amp" xlink:href="#CB.PLTSRV.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.pilotVessel.vpa" xlink:href="#CB.PLTSRV.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>            
+            <categoryOfRelationship>required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.pilotVessel.52"/>
+        </S127:PermissionType>
+    
+    
+        <S127:PermissionType gml:id="CB.PERM.required.pilotVessel.VPA">            
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.pilotVessel.vpa2" xlink:href="#CB.PLTSRV.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>            
+            <categoryOfRelationship>required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.pilotVessel.50.1"/>
+        </S127:PermissionType>
+    
+    
+        <S127:PermissionType gml:id="CB.PERM.required.pilotVessel.CIPA">                        
+            <S100:invInformationAssociation gml:id="CB.APPLIC.PERM.required.pilotVessel.cipa" xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/vslLocation"/>
+            <categoryOfRelationship>required</categoryOfRelationship>
+            <permission xlink:href="#CB.APPLIC.pilotVessel.41.Chesapeake"/>
+        </S127:PermissionType>
+    
+    <!--end Permissions-->
+    
+   <!--Applicability-->
+    
+        <S127:Applicability gml:id="CB.APPLIC.foreign">
+            <categoryOfVessel>other: all types</categoryOfVessel>
+            <categoryOfVesselRegistry>foreign</categoryOfVesselRegistry>
+            <logicalConnectives>logical conjunction</logicalConnectives>
+            <vslLocation xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:Applicability>
+    
+    
+        <S127:Applicability gml:id="CB.APPLIC.domesticForeignTrade">
+            <categoryOfVessel>other: under register in the foreign trade</categoryOfVessel>
+            <categoryOfVesselRegistry>domestic</categoryOfVesselRegistry>
+            <logicalConnectives>logical conjunction</logicalConnectives>
+            <vslLocation xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:Applicability>
+    
+    
+        <S127:Applicability gml:id="CB.APPLIC.domesticWithFedPilot">
+            <categoryOfVessel>other: US vessels under enrollment in the coastwise trade IF they have on board a pilot properly licensed by the Federal Government to operate in these waters</categoryOfVessel>
+            <categoryOfVesselRegistry>domestic</categoryOfVesselRegistry>
+            <logicalConnectives>logical conjunction</logicalConnectives>
+            <vslLocation xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:Applicability>
+    
+    
+        <S127:Applicability gml:id="CB.APPLIC.domesticPublic">
+            <categoryOfVessel>other: public</categoryOfVessel>
+            <categoryOfVesselRegistry>domestic</categoryOfVesselRegistry>
+            <logicalConnectives>logical conjunction</logicalConnectives>
+            <vslLocation xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+        </S127:Applicability>
+        
+    <!-- this is an attempt to represent the pilot vessel -->
+    
+        <S127:Applicability gml:id="CB.APPLIC.pilotVessel.50">
+            <featureName>
+                <name>Pilot Boat</name>
+            </featureName>
+            <categoryOfVessel>service</categoryOfVessel>
+            <information>
+                <headline>Description</headline>
+                <text>black hulls and white houses with the word “PILOT” in large letters on each side.</text>
+            </information>
+            <vesselsMeasurements>
+                <comparisonOperator>equal to</comparisonOperator>
+                <vesselsCharacteristics>length overall</vesselsCharacteristics>
+                <vesselsCharacteristicsValue>50</vesselsCharacteristicsValue>
+                <vesselsCharacteristicsUnit>foot</vesselsCharacteristicsUnit>
+            </vesselsMeasurements>
+            <vslLocation xlink:href="#CB.PLTSRV.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>            
+        </S127:Applicability>
+    
+    
+        <S127:Applicability gml:id="CB.APPLIC.pilotVessel.52">
+            <featureName>
+                <name>Pilot Boat</name>
+            </featureName>
+            <categoryOfVessel>service</categoryOfVessel>
+            <information>
+                <headline>Boat Location</headline>
+                <text>Lynnhaven Inlet</text>
+            </information>           
+            <information>
+                <headline>Description</headline>
+                <text>black hulls and white houses with the word “PILOT” in large letters on each side.</text>
+            </information>         
+            <vesselsMeasurements>
+                <comparisonOperator>equal to</comparisonOperator>
+                <vesselsCharacteristics>length overall</vesselsCharacteristics>
+                <vesselsCharacteristicsValue>52</vesselsCharacteristicsValue>
+                <vesselsCharacteristicsUnit>foot</vesselsCharacteristicsUnit>
+            </vesselsMeasurements>
+            <vslLocation xlink:href="#CB.PLTSRV.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <vslLocation xlink:href="#CB.PLTSRV.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>            
+        </S127:Applicability>
+    
+    
+        <S127:Applicability gml:id="CB.APPLIC.pilotVessel.50.1">
+            <featureName>
+                <name>Pilot Boat</name>
+            </featureName>
+            <categoryOfVessel>service</categoryOfVessel>
+            <information>
+                <headline>Boat Location</headline>
+                <text>Lynnhaven Inlet</text>
+            </information>
+            <information>
+                <headline>Number of Boats</headline>
+                <text>4</text>                
+            </information>
+            <information>
+                <headline></headline>
+                <text>Two boats are in use at any given time.</text>
+            </information>
+            <information>
+                <headline>Description</headline>
+                <text>orange hulls and gray houses with the word “PILOT” in large letters on each side.</text>
+            </information>         
+            <vesselsMeasurements>
+                <comparisonOperator>equal to</comparisonOperator>
+                <vesselsCharacteristics>length overall</vesselsCharacteristics>
+                <vesselsCharacteristicsValue>50</vesselsCharacteristicsValue>
+                <vesselsCharacteristicsUnit>foot</vesselsCharacteristicsUnit>
+            </vesselsMeasurements>
+            <vslLocation xlink:href="#CB.PLTSRV.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>                   
+        </S127:Applicability>
+    
+    
+        <S127:Applicability gml:id="CB.APPLIC.pilotVessel.41.Chesapeake">
+            <featureName>
+                <name>Pilot Boat Chesapeake</name>
+            </featureName>
+            <categoryOfVessel>service</categoryOfVessel>       
+            <information>
+                <headline>Description</headline>
+                <text>grey hull with white superstructure and the word “PILOT” in large letters on each side.</text>
+            </information>    
+            <information>
+                <headline>Pilot Ladders</headline>
+                <text>Pilot ladders are recommended to be rigged 4 feet above the water on the leeward side.</text>
+            </information>
+            <vesselsMeasurements>
+                <comparisonOperator>equal to</comparisonOperator>
+                <vesselsCharacteristics>length overall</vesselsCharacteristics>
+                <vesselsCharacteristicsValue>41</vesselsCharacteristicsValue>
+                <vesselsCharacteristicsUnit>foot</vesselsCharacteristicsUnit>
+            </vesselsMeasurements>
+            <vslLocation xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>                   
+        </S127:Applicability>
+        
+    <!--end Applicability-->
+
+    <!-- Pilotage District -->
+    
+        <S127:PilotageDistrict gml:id="CP.PILDST.CB">
+            <featureName>
+                <name>Chesapeake Bay</name>
+            </featureName>
+            <textContent>
+                <information>                    
+                    <text>Entire pilotage district</text>
+                </information>
+            </textContent>
+            <permission xlink:href="#CB.PERM.required.foreign" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <permission xlink:href="#CB.PERM.required.domesticForeignTrade" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <permission xlink:href="#CB.PERM.notRequired.domesticWithFedPilot" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <permission xlink:href="#CB.PERM.permitted.domesticPublic" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <consistsOf xlink:href="#CB.PILBOP.US3EC08M.US000063059964398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>
+            <consistsOf xlink:href="#CB.PILBOP.US3EC08M.US002254758064398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>
+            <consistsOf xlink:href="#CB.PILBOP.US5VA22M.US001926717100050.PILPNT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>
+            <consistsOf xlink:href="#CB.PILBOP.US4DE11M.US001255136564293" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>
+            <consistsOf xlink:href="#CB.PILBOP.US5NJ21M.US003678797800050.BOYLAT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>
+            <consistsOf xlink:href="#CB.PILBOP.US5MD15M.US000285323304668.ACHARE" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>
+            <consistsOf xlink:href="#CB.PILBOP.US5VA15M.US001356330900050.BOYLAT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/consistsOf"/>            
+            <serviceProvider xlink:href="#CB.PLTSRV.IPAI" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvider"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvider"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvider"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.SHPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvider"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvider"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvider"/>
+            <geometry>
+                
+                    <gml:Polygon srsName="urn:ogc:def:crs:EPSG::4326" gml:id="pildstChesapeakeBay.geom.0">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>
+                                    36.72570 -75.16581 38.93435 -74.79564 39.88342 -75.14737 36.800000 -75.809555 36.800000 -77.1184900 36.72570 -75.16581
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                
+            </geometry>
+        </S127:PilotageDistrict>
+       
+    <!-- end Pilotage District -->
+ 
+    <!-- Pilot Boarding Place -->
+    <!-- can leverage the gml:id to add the ENC identifiers "Data set name"."Long Name" -->
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US3EC08M.US000063059964398">
+            <featureName>
+                <name>Cape Henry (Pilot boarding)</name>
+            </featureName>
+            <textContent>
+                <information><text>the Pilot boarding area off Cape Henry</text></information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination>vessels entering from sea transiting Chesapeake Bay and its tributaries, Chesapeake and Delaware Canal, and Delaware Bay and River. It also services between Cape Henlopen, Philadelphia and Delair. </destination>
+            <pilotMovement>embarkation</pilotMovement>
+            <pilotVessel>Pilots use commercial launch services.</pilotVessel>
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistrictAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>              
+            <geometry>                
+                <S100:Polygon gml:id="CB.PILBOP.A.US3EC08M.US000063059964398" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>36.936 -76.032
+                        36.958 -76.017
+                        36.98 -75.999
+                        36.955 -75.975
+                        36.954 -75.973
+                        36.946 -75.92
+                        36.918 -75.922
+                        36.919 -75.966
+                        36.936 -76.032
+                    </gml:posList></gml:LinearRing></gml:exterior></S100:Polygon>
+                
+            </geometry>           
+        </S127:PilotBoardingPlace>
+    
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US3EC08M.US002254758064398">
+            <featureName>
+                <name>off the entrance to Patuxent River</name>
+            </featureName>
+            <textContent>
+                <information><text>Pilots may meet here with sufficient coordination. Contact the pilot office for information. The Maryland pilots are replaced by Virginia pilots here.</text></information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination>Wahinton, D.C., or the lower part of Chesapeake Bay</destination>
+            <pilotMovement>pilot change</pilotMovement>
+            <pilotVessel>white motor launch</pilotVessel><!-- NOTE: this is repeated in the piney point PILBOP, would be nice to have an association to a vessel-->            
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistricAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <geometry>                
+                <S100:Polygon gml:id="CB.PILBOP.A.US3EC08M.US002254758064398" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>38.351 -76.361
+                        38.357 -76.309
+                        38.316 -76.284
+                        38.304 -76.353
+                        38.351 -76.361
+                    </gml:posList></gml:LinearRing></gml:exterior></S100:Polygon>
+                
+            </geometry>
+        </S127:PilotBoardingPlace>
+    
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US5VA22M.US001926717100050.PILPNT">
+            <featureName>
+                <name>Potomac River off Piney Point</name>
+            </featureName>
+            <textContent>
+                <information><text>Pilots may meet here with sufficient coordination. Contact the pilot office for information.</text></information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination></destination>
+            <pilotMovement>pilot change</pilotMovement>
+            <pilotVessel>white motor launch</pilotVessel>
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistrictAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/> 
+            <serviceProvider xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <geometry>
+            
+            <S100:Point gml:id="CB.PILBOP.P.US5VA22M.US001926717100050.PILPNT" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                <gml:pos>38.133 -76.531</gml:pos>
+            </S100:Point>
+            
+            </geometry>
+        </S127:PilotBoardingPlace>
+    
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US4DE11M.US001255136564293">
+            <featureName>
+                <name>near Cape Henlopen</name>
+            </featureName>
+           <textContent>
+               <information>
+                   <headline>Meeting Place</headline>
+                   <text>The pilot boarding area is about 2.5 miles southeastward of Cape Henlopen.</text>
+               </information>
+           </textContent>
+            <!-- can textContent have an id and be reused? I am noticing this Precautionary area (note C) applies to the pilot boarding area, a traffic lane, dumping grounds, restricted areas, etc.-->
+            <textContent>                
+                <information>
+                    <headline>PRECAUTIONARY AREA (note C)</headline>
+                    <text>Traffic within the Precautionary Area may consist of vessels operating between Delaware Bay and one of the established traffic lanes. Mariners are advised to exercise extreme care in navigating within this area.</text></information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination>inbound</destination>
+            <pilotMovement>embarkation</pilotMovement>
+            <pilotVessel>uses Delaware Bay Launch Service</pilotVessel>  
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistrictAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.IPAI" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <geometry>                
+                <!--  -->
+                <S100:Polygon gml:id="CB.PILBOP.A.US4DE11M.US001255136564293" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>38.777 -75.059
+                        38.792 -75.03
+                        38.771 -74.979
+                        38.746 -75.023
+                        38.777 -75.059
+                    </gml:posList></gml:LinearRing></gml:exterior></S100:Polygon>
+                <!--  -->
+            </geometry>
+        </S127:PilotBoardingPlace>
+    
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US5NJ21M.US003678797800050.BOYLAT">
+            <featureName>
+                <name>near Lighted Bell Buoy 2CM, Cape May inlet(Pilot boarding)</name>
+            </featureName>
+            <textContent>
+                <information><text>Pilots will board just southwestward of Lighted Bell Buoy 2CM off Cape May Inlet.</text></information>
+            </textContent>
+            <textContent>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>4</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>91</text>
+                </information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination></destination>
+            <pilotMovement>embarkation</pilotMovement>
+            <pilotVessel></pilotVessel>
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistrictAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <geometry><S100:Point gml:id="CB.PILBOP.P.SWof2CM" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                <gml:pos>38.928363 -74.859189</gml:pos>
+            </S100:Point></geometry>
+        </S127:PilotBoardingPlace>
+    
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US5MD15M.US000285323304668.ACHARE">
+            <featureName>
+                <name>Reedy Point Anchorage</name>                
+            </featureName>
+            <featureName>
+                <name>Delaware Bay and River Anchorage Number 4</name>
+            </featureName>
+            <textContent>
+                <information>
+                    <text>the Reedy Point Anchorage near the east end of the Chesapeake and Delaware Canal.</text>
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>                    
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>91</text>
+                </information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination></destination>
+            <pilotMovement>embarkation</pilotMovement>
+            <pilotVessel></pilotVessel>
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistrictAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.IPAI" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <geometry>                
+                <S100:Polygon gml:id="CB.PILBOP.P.ReedyPtAnchorageArea" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>39.571 -75.572
+                        39.574 -75.569
+                        39.566 -75.557
+                        39.564 -75.559
+                        39.571 -75.572
+                    </gml:posList></gml:LinearRing></gml:exterior></S100:Polygon>
+                
+            </geometry>
+        </S127:PilotBoardingPlace>        
+    
+    
+        <S127:PilotBoardingPlace gml:id="CB.PILBOP.US5VA15M.US001356330900050.BOYLAT">
+            <featureName>
+                <name>Sewells Point</name>
+            </featureName>
+            <textContent>
+                <information>
+                    <headline>River Pilot Only</headline>
+                    <text>Vessels requesting a river pilot only are boarded off Sewells Point.</text>
+                </information>
+            </textContent>
+            <categoryOfPilotBoardingPlace>boarding by pilot-cruising vessel</categoryOfPilotBoardingPlace>
+            <categoryOfVessel>service</categoryOfVessel>
+            <destination>James River</destination>
+            <pilotMovement>embarkation</pilotMovement>
+            <pilotVessel>Pilots use commercial launch service.</pilotVessel>
+            <componentOf xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/pilotageDistrictAssociation"/>
+            <serviceProvider xlink:href="#CB.PLTSRV.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceProvisionArea"/>
+            <geometry>
+                <S100:Point gml:id="CB.PILBOP.P.US5VA15M.US001873947800050.BOYLAT" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                    <gml:pos>38.351 -76.361</gml:pos>
+                </S100:Point>
+            </geometry>
+        </S127:PilotBoardingPlace>
+    
+    <!-- end Pilot Boarding Place -->
+    
+    <!-- Pilot Services -->
+    
+        <S127:PilotService gml:id="CB.PLTSRV.IPAI">            
+            <featureName>
+                <name>The Interport Pilots Agency, Inc.</name>
+            </featureName>            
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>the Delaware Bay and River, Chesapeake and Delaware Canal, Upper Chesapeake Bay, New York Harbor, Long Island Sound and other areas along the northeast coast.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>225</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>the Delaware Bay and River, Chesapeake and Delaware Canal, Upper Chesapeake Bay, New York Harbor, Long Island Sound and other areas along the northeast coast.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>6</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>225</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>the Chesapeake and Delaware Canal and continuing to ports in the Delaware Bay and River, Upper Chesapeake Bay, New York Harbor and Long Island Sound.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>91</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Baltimore Harbor and many northeast ports via the Chesapeake and Delaware Canal.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>15</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>55</text>
+                </information>
+            </textContent>
+            <textContent>
+                <information>
+                    <headline>Meeting Place</headline>
+                    <text>They also board vessels at any Delaware River or Upper Chesapeake Bay port.</text>
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>91</text>
+                </information>
+            </textContent>                       
+            <categoryOfPilot>pilot</categoryOfPilot>
+            <categoryOfPilot>river</categoryOfPilot>
+            <pilotQualification>federal pilot</pilotQualification>
+            <pilotRequest>Arrangements for their services are made through the ship’s agents or by contacting the agency directly; with a 6-hour ETA update.</pilotRequest>            
+            <remotePilot>false</remotePilot>
+            <noticeTime><noticeTimeHours>24</noticeTimeHours></noticeTime>            
+            <serviceArea xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US4DE11M.US001255136564293" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US5MD15M.US000285323304668.ACHARE" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>            
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247"/>               
+            <geometry>
+                <S100:Polygon gml:id="PS.CB.IPAI" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>41.38599 -71.77481 
+                        41.20439 -73.84573 
+                        40.08323 -75.36184 
+                        39.62781 -76.77359 
+                        38.93474 -77.47671 
+                        38.29091 -77.49869 
+                        37.16665 -77.24284 
+                        36.71003 -76.63859 
+                        36.75846 -75.95744 
+                        41.38599 -71.77481 
+                    </gml:posList>                    
+                </gml:LinearRing></gml:exterior></S100:Polygon>                
+            </geometry>    
+        </S127:PilotService>
+    
+    
+        <S127:PilotService gml:id="CB.PLTSRV.CIPA">
+            <featureName>
+                <name>The Chesapeake and Interstate Pilots Association</name>
+            </featureName>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Chesapeake Bay and its tributaries, Chesapeake and Delaware Canal, and Delaware Bay and River.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>224</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>between Cape Henlopen, Philadelphia and Delair</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>6</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>66</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>the Chesapeake and Delaware Canal</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>92</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>between Cape Henry and various ports and places on the Chesapeake Bay and its tributaries.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>9</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>57</text>
+                </information>
+            </textContent> 
+            <textContent>
+                <information>
+                    <headline>Radio Monitoring</headline>
+                    <text>90 minutes prior to the last ETA received.</text>
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>9</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>57</text>
+                </information>                
+            </textContent>
+            <textContent>
+                <information>
+                    <headline>ETA discrepancies</headline>
+                    <text>It has been noted that sometimes considerable differences occur between a vessel’s ETA and her actual arrival due to conditions encountered between Cape Hatteras and Cape Henry. Revisions to the ETA of 1 hour or greater should be passed to the pilots especially if the vessel’s arrival will be sooner than previously advised.</text>
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>9</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>57</text>
+                </information> 
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>any port or place on the James River and some pilot service in the upper James River at night.</text>
+                </information>
+                <information>
+                    <headline>Communications</headline>
+                    <text>Pilots begin radio watches at the launch service 30 minutes prior to last ETA.</text>
+                </information>
+                <information>
+                    <headline>Advance Pilot Orders</headline>
+                    <text>requested with 3-hour ETA update and any subsequent changes requested.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>10</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>20</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>to Yorktown and directly to the York River</text>
+                </information>
+                <information>
+                    <headline>Meeting Place</headline>
+                    <text>will meet a vessel at its port if it is on the Chesapeake Bay and its tributaries or Delaware Bay and River </text>
+                </information>
+                <information>                    
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>11</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>42</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Potomac River to Piney Point</text>
+                </information>
+                <information>
+                    <headline>Meeting Place</headline>
+                    <text>will meet a vessel at its port if it is on the Chesapeake Bay and its tributaries or Delaware Bay and River and provide all pilot services directly to the Potomac River. Pilots may meet vessels off the Patuxent River or off the mouth of the Potomac River with sufficient coordination. Contact the pilot office for information.</text>
+                </information>
+                
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>12</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>31</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>to or from Baltimore via the Chesapeake Bay if the vessel is entering from sea at Cape Henry or transiting between any port or place on the Chesapeake Bay and its tributaries. Pilot service is also offered to vessels to or from Baltimore that are transiting the Chesapeake and Delaware Canal.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>15</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>54</text>
+                </information>
+            </textContent> 
+            <textContent>
+                <information>
+                    <headline>Additional Information</headline>
+                    <text>Pilots use commercial launch services and will meet vessels in the Pilotage Area off Cape Henlopen. Pilots arrive at the launch one hour prior to arrival and monitor VHF-FM channel 16 one hour prior to last ETA</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>6</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>66</text>
+                </information>
+            </textContent>
+            <textContent>
+                <information>
+                    <headline>Services Provided</headline>
+                    <text>provide all pilot services required when vessels use the Chesapeake and Delaware Canal.</text>                
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>92</text>
+                </information>
+            </textContent>  
+            <textContent>
+                <information>
+                    <headline>Meeting Place</headline>
+                    <text>Pilots will meet vessels upon prior arrangement at Cape Henlopen or any port or place on the Delaware Bay and River, at Cape Henry or any port or place on the Chesapeake Bay and its tributaries. </text>
+                </information>
+                <information>
+                    <headline>Services Provided</headline>
+                    <text>Pilots will also provide all pilot services required from the port of departure to the port of arrival.</text>
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>15</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>54</text>
+                </information>
+            </textContent>
+            <permission xlink:href="#CB.PERM.required.pilotVessel.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <categoryOfPilot>pilot</categoryOfPilot>
+            <categoryOfPilot>river</categoryOfPilot>
+            <pilotQualification>federal pilot</pilotQualification>
+            <pilotRequest>Arrangements for pilots are made through ships’ agents or the pilot office. Advance pilot ordering with a 6-hour ETA update and any subsequent changes is requested.</pilotRequest>
+            <remotePilot>false</remotePilot>      
+            <noticeTime><noticeTimeText>Advance pilot orders requested with 6-hour ETA update and any subsequent changes requested. Pilots will get underway generally 30 minutes prior to the time they have been ordered.</noticeTimeText></noticeTime>            
+            <serviceArea xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>            
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US000063059964398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US002254758064398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US5VA22M.US001926717100050.PILPNT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US4DE11M.US001255136564293" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>            
+            <serviceArea xlink:href="#CB.PILBOP.US5VA15M.US001356330900050.BOYLAT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>            
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/locationHours"/>            
+            <geometry>
+                <S100:Polygon gml:id="PS.CB.CIPA" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>41.21266 -71.82699 
+                        40.78149 -74.49667 
+                        39.25874 -74.74936 
+                        39.89384 -75.34811 
+                        39.47109 -76.43576 
+                        38.815 -77.11691 
+                        38.196 -77.55087 
+                        36.99916 -76.86972 
+                        36.6033 -76.03476 
+                        41.21266 -71.82699
+                    </gml:posList>                    
+                </gml:LinearRing></gml:exterior></S100:Polygon>                
+            </geometry>            
+        </S127:PilotService>
+      
+    
+        <S127:PilotService gml:id="CB.PLTSRV.AMP">
+            <featureName>
+                <name>The Association of Maryland Pilots</name>
+            </featureName>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Chesapeake City to Maryland ports and to Washington, D.C., or the lower part of Chesapeake Bay</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>89</text>
+                </information>
+            </textContent>             
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>any port in Maryland and service between Cape Henry, VA, to Baltimore and between Baltimore and the Head of the Chesapeake Bay including to Chesapeake City in the Camp;D Canal.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>9</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>54</text>
+                </information>
+            </textContent>             
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>on the Potomac River bound for a port in Maryland or Washington, DC.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>12</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>32</text>
+                </information>
+            </textContent>           
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>any port in Maryland and service between Baltimore and the entrance of the Chesapeake Bay at Cape Henry, VA.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>15</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>53</text>
+                </information>
+            </textContent>                         
+            <textContent>
+                <information>
+                    <headline>Communications</headline>
+                    <text>All pilots carry radiotelephones for bridge-to-bridge communications and for communications with the canal traffic dispatcher at Chesapeake City</text>
+                </information>
+            </textContent>
+            <permission xlink:href="#CB.PERM.required.pilotVessel.AMPVPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <categoryOfPilot>pilot</categoryOfPilot>
+            <categoryOfPilot>river</categoryOfPilot>
+            <categoryOfPilot>harbour</categoryOfPilot>
+            <pilotQualification>government pilot</pilotQualification>
+            <pilotRequest>Email ETA, transit speed, and draft to pilot service email, with confirmation/updates 24, 12 and 6 hours before arrival pilot station.</pilotRequest>
+            <remotePilot>false</remotePilot>
+            <noticeTime>
+                <noticeTimeHours>72</noticeTimeHours>
+            </noticeTime>  
+            <serviceArea xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US000063059964398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US002254758064398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US5VA22M.US001926717100050.PILPNT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>            
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/locationHours"/>            
+            <geometry>
+                <S100:Polygon gml:id="PS.CB.AMP" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>38.87276 -75.0278 
+                        39.81793 -75.73367 
+                        39.35225 -76.84329 
+                        38.91338 -77.35416 
+                        37.18757 -77.15091 
+                        36.50181 -76.01932 
+                        38.46317 -74.64053 
+                        38.87276 -75.0278
+                    </gml:posList>                    
+                </gml:LinearRing></gml:exterior></S100:Polygon>                
+            </geometry>               
+        </S127:PilotService>
+    
+    
+        <S127:PilotService gml:id="CB.PLTSRV.SHPA">
+            <featureName>
+                <name>the Sandy Hook Pilot Association</name>
+            </featureName>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>all ports on the New Jersey seacoast from Sandy Hook to and including Atlantic City.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>226</text>
+                </information>
+            </textContent>             
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>New Jersey Coast</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>4</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>21</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Shark River Inlet</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>4</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>37</text>
+                </information>
+            </textContent> 
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Manasquan Inlet</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>4</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>44</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>5</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                   
+                    <text>36</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Atlantic City</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>4</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>68</text>
+                </information>
+            </textContent>
+            <categoryOfPilot>pilot</categoryOfPilot>
+            <categoryOfPilot>river</categoryOfPilot>
+            <categoryOfPilot>harbour</categoryOfPilot>
+            <pilotQualification>government pilot</pilotQualification>
+            <pilotRequest>Arrangements for pilotage may be made through ship’s agents or directly.</pilotRequest>
+            <remotePilot>false</remotePilot>
+            <noticeTime></noticeTime>   
+            <serviceArea xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US000063059964398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>            
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/locationHours"/>
+            <geometry>
+                <S100:Polygon gml:id="PS.CB.SHPA" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>40.68835 -74.03731 
+                        40.64096 -74.0634 
+                        40.46932 -73.98031 
+                        40.35796 -73.94186 
+                        40.15202 -73.98924 
+                        39.57702 -74.08468 
+                        38.74006 -74.88394 
+                        39.6405 -75.70517 
+                        39.87908 -75.48269 
+                        39.29914 -74.79605 
+                        40.6003 -74.42801
+                        40.68835 -74.03731 
+                    </gml:posList>                    
+                </gml:LinearRing></gml:exterior></S100:Polygon> 
+            </geometry> 
+        </S127:PilotService>
+    
+    
+        <S127:PilotService gml:id="CB.PLTSRV.PABRD">
+            <featureName>
+                <name>Pilots' Association for Bay and River Delaware </name>
+            </featureName>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>all ports on the New Jersey seacoast from Sandy Hook to and including Atlantic City.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>4</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>91</text>
+                </information>
+            </textContent>          
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>Delaware Bay, Delaware River and tributaries thereof.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>6</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>62</text>
+                </information>
+            </textContent>  
+            <textContent>
+                <information>
+                    <headline>Communications</headline>
+                    <text>The pilots carry portable radiotelephones for bridge-to-bridge communications.</text>
+                </information>
+                <information>
+                    <headline>book</headline>
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>
+                    <text>6</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>
+                    <text>64</text>
+                </information>                
+            </textContent>
+            <textContent>
+                <information>
+                    <headline>Services Provided</headline>                  
+                    <text>provides qualified offshore “advisors” for the deepest draft vessels between Lighted Buoy “D” and the anchorage areas in Delaware Bay. A notice of 24 hours before estimated arrival is requested for this service.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>6</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>65</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>through the Delaware Canal from Delaware River to Chesapeake City.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>7</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>89</text>
+                </information>
+            </textContent> 
+            <textContent>
+                <information>
+                    <headline>Communications</headline>
+                    <text>All pilots carry radiotelephones for bridge-to-bridge communications and for communications with the canal traffic dispatcher at Chesapeake City</text>
+                </information>
+            </textContent>
+            <permission xlink:href="#CB.PERM.required.pilotVessel.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <categoryOfPilot>pilot</categoryOfPilot>
+            <categoryOfPilot>river</categoryOfPilot>
+            <categoryOfPilot>harbour</categoryOfPilot>
+            <pilotQualification>government pilot</pilotQualification>
+            <pilotRequest>Arrangements for pilotage can be made through ships’ agents or directly. Vessels are requested to contact pilots when inbound at either Delaware Lighted Buoy D or Five Fathom Bank Lighted Buoy F; both buoys are equipped with a racon. Vessels not requiring pilots are requested to contact “Cape Henlopen Tower” one hour prior to entering or departing Delaware Bay.</pilotRequest>
+            <remotePilot>false</remotePilot>
+            <noticeTime>
+                <noticeTimeHours>24</noticeTimeHours>
+                <noticeTimeText>advance notice is requested with updated 6-hour ETA</noticeTimeText>              
+            </noticeTime>   
+            <serviceArea xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US000063059964398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US4DE11M.US001255136564293" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US5NJ21M.US003678797800050.BOYLAT" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>                        
+            <theServiceHours xlink:href="#SRVHRS.LIMITED.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/locationHours"/>            
+            <geometry>
+                <S100:Polygon gml:id="PS.CB.PABRD" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>38.90055 -74.90866 
+                        39.14807 -74.74386 
+                        39.68279 -75.34262 
+                        39.79683 -75.61178 
+                        39.56855 -75.71615 
+                        38.42875 -75.18881
+                        38.90055 -74.90866
+                    </gml:posList>                    
+                </gml:LinearRing></gml:exterior></S100:Polygon> 
+            </geometry> 
+        </S127:PilotService>
+    
+    
+        <S127:PilotService gml:id="CB.PLTSRV.VPA">
+            <featureName>
+                <name>Virginia Pilots Association</name>
+            </featureName>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>               
+                    <text>to any port in Virginia</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>9</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                   
+                    <text>54</text>
+                </information>
+            </textContent>          
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                   
+                    <text>upper 38 miles of the James River.</text>
+                </information>
+                <information>
+                    <headline>Availability</headline>
+                    <text>only during daylight.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                   
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                 
+                    <text>9</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                   
+                    <text>21</text>
+                </information>
+            </textContent>  
+            <textContent>
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>York River. Pilot service above Cheatham Annex is available only during daylight.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>11</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>42</text>
+                </information>
+            </textContent>
+            <textContent>                
+                <information>
+                    <headline>Destination</headline>                    
+                    <text>bound for a port in Virginia or Washington, DC.</text>
+                </information>
+                <information>
+                    <headline>book</headline>                    
+                    <text>3</text>
+                </information>
+                <information>
+                    <headline>chapter</headline>                    
+                    <text>12</text>
+                </information>
+                <information>
+                    <headline>paragraph</headline>                    
+                    <text>32</text>
+                </information>
+            </textContent> 
+            <permission xlink:href="#CB.PERM.required.pilotVessel.AMPVPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <permission xlink:href="#CB.PERM.required.pilotVessel.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/permission"/>
+            <categoryOfPilot>pilot</categoryOfPilot>
+            <categoryOfPilot>river</categoryOfPilot>
+            <categoryOfPilot>harbour</categoryOfPilot>
+            <pilotQualification>government pilot</pilotQualification>
+            <pilotRequest>Arrangements for pilots should be made well in advance through ships’ agents.</pilotRequest>
+            <remotePilot>false</remotePilot>
+            <serviceArea xlink:href="#CP.PILDST.CB" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <serviceArea xlink:href="#CB.PILBOP.US3EC08M.US000063059964398" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/serviceArea"/>
+            <theServiceHours xlink:href="#SRVHRS.NORMOP.247" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/locationHours"/>            
+            <geometry>
+                <S100:Polygon gml:id="PS.CB.VPA" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"><gml:exterior><gml:LinearRing>
+                    <gml:posList>37.99156 -75.24173 
+                        37.89843 -76.12338 
+                        38.71739 -76.45297 
+                        39.15323 -76.3541 
+                        38.94846 -77.76035 
+                        38.11916 -77.25498 
+                        37.19725 -76.9144 
+                        36.53143 -76.06296 
+                        36.54247 -75.7059 
+                        37.99156 -75.24173
+                    </gml:posList>                    
+                </gml:LinearRing></gml:exterior></S100:Polygon> 
+            </geometry> 
+        </S127:PilotService>
+    
+    <!-- end Pilot Services -->
+    
+    <!-- Service Hours -->
+    
+        <S127:ServiceHours gml:id="SRVHRS.NORMOP.247">            
+            <scheduleByDayOfWeek>
+                <categoryOfSchedule>normal operation</categoryOfSchedule>
+                <timeIntervalsByDayOfWeek>
+                    <dayOfWeek>Sunday</dayOfWeek>
+                    <dayOfWeek>Saturday</dayOfWeek>
+                    <dayOfWeekIsRange>true</dayOfWeekIsRange>
+                    <timeOfDayStart>00:00:00</timeOfDayStart>
+                    <timeOfDayEnd>24:00:00</timeOfDayEnd>                    
+                </timeIntervalsByDayOfWeek>
+            </scheduleByDayOfWeek>   
+            <theAuthority_srvHrs xlink:href="#CP.AUTORI.PILOT.CIPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+            <theAuthority_srvHrs xlink:href="#CP.AUTORI.PILOT.VPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+            <theAuthority_srvHrs xlink:href="#CP.AUTORI.PILOT.AMP" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/> 
+            <theAuthority_srvHrs xlink:href="#CP.AUTORI.PILOT.IPAI" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+            <theAuthority_srvHrs xlink:href="#CP.AUTORI.PILOT.SHPA" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+        </S127:ServiceHours>
+        
+    
+        <S127:ServiceHours gml:id="SRVHRS.LIMITED.247">          
+            <scheduleByDayOfWeek>
+                <categoryOfSchedule>normal operation</categoryOfSchedule>
+                <timeIntervalsByDayOfWeek>
+                    <dayOfWeek>Sunday</dayOfWeek>
+                    <dayOfWeek>Saturday</dayOfWeek>
+                    <dayOfWeekIsRange>true</dayOfWeekIsRange>
+                    <timeOfDayStart>00:00:00</timeOfDayStart>
+                    <timeOfDayEnd>24:00:00</timeOfDayEnd>                    
+                </timeIntervalsByDayOfWeek>
+            </scheduleByDayOfWeek>
+            <information><text>limited basis</text></information>
+            <theAuthority_srvHrs xlink:href="#CP.AUTORI.PILOT.PABRD" xlink:arcrole="http://www.iho.int/s127/gml/1.0/roles/authorityHours"/>
+        </S127:ServiceHours>
+    
+    <!-- end Service Hours -->
+</S127:Dataset>
