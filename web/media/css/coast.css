@@ -1,0 +1,61 @@
+html {
+    font-family: -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+input {
+    border: 1px solid black;
+}
+
+.field-annotation {
+   cursor: help;
+   font-size: 12px;
+   margin-left: 10px;
+   border: 1px solid black;
+   display: inline-block;
+   width: 14px;
+   height: 14px;
+   border-radius: 8px;
+   text-align: center;
+   padding-bottom: 1px;
+}
+
+#annotation {
+    position: absolute;
+    left: calc(25% + 340px);
+    top: 5px;
+    height: 75px;
+    width: calc(75% - 360px);
+    overflow-y: scroll;
+    padding: 5px;
+    border: 1px solid black;
+}
+#chapter_text {
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    padding: 5px;
+    left: 5px;
+    top: 5px;
+    height: calc(100% - 25px);
+    width: 25%;
+    overflow-y: scroll;
+}
+#complex_types {
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 85px;
+    left: calc(25% + 25px);
+    top: 5px;
+}
+#form {
+    position: absolute;
+    left: calc(25% + 25px);
+    width: calc(75% - 45px);
+    top: 100px;
+    bottom: 8px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    padding: 5px;
+}

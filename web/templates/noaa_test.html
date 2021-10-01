@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>Coast Pilot Test</title>
+    <script type="text/javascript" src="/media/js/sprintf.min.js"></script>
+    <script type="text/javascript" src="/media/js/coast.js"></script>
+    <link rel='stylesheet' href='/media/css/coast.css'/>
+{% endblock %}
+{% block body %}
+    <div id="coast">
+        {% comment %}
+        <div id="chapter_text" contenteditable="true">Drag a text file or paste text</div>
+        <select id="complex_types" size="1"></select>
+        <div id="annotation"></div>
+        <div id="form"></div>
+        {% endcomment %}
+    </div>
+{% endblock %}
