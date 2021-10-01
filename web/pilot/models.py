@@ -267,7 +267,6 @@ class Authority(InformationType, S127ElementBase):
     category_of_authority = models.CharField(max_length=100, choices=CATEGORY_OF_AUTHORITY, blank=True, null=True)
     textContent = models.ForeignKey("TextContent", blank=True, null=True)
     theContactDetails = models.ManyToManyField("ContactDetails", blank=True)
-#   theServiceHours = models.ForeignKey("ServiceHours", blank=True, null=True) #multiple
     theServiceHours = models.ManyToManyField("ServiceHours", blank=True)
     theShipReport = models.ManyToManyField("ShipReport", blank=True)
 
